@@ -6,6 +6,13 @@ name = "pypi"
 [packages]
 django = "*"
 django-environ = "*"
+pillow = "*"
+djangorestframework = "*"
+djoser = "*"
+django-filter = "*"
+cloudinary = "*"
+python-decouple = "*"
+whitenoise = "*"
 
 [dev-packages]
 
