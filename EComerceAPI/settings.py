@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -167,7 +167,12 @@ cloudinary.config(
   api_key = config('api_key'), 
   api_secret = config('api_secret') 
 )
-
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': config('cloud_name'),
+    'API_KEY': config('api_key'),
+    'API_SECRET': config('api_secret'),
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 

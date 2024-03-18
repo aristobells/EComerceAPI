@@ -13,6 +13,7 @@ django-filter = "*"
 cloudinary = "*"
 python-decouple = "*"
 whitenoise = "*"
+django-cloudinary-storage = "*"
 
 [dev-packages]
 
