@@ -14,6 +14,10 @@ cloudinary = "*"
 python-decouple = "*"
 whitenoise = "*"
 django-cloudinary-storage = "*"
+pyyaml = "*"
+uritemplate = "*"
+inflection = "*"
+coreapi = "*"
 
 [dev-packages]
 
