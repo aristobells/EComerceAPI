@@ -18,6 +18,7 @@ pyyaml = "*"
 uritemplate = "*"
 inflection = "*"
 coreapi = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'EcomApp',
     'rest_framework',
+    "corsheaders",
     'rest_framework.authtoken',
     'djoser',
     'cloudinary',
@@ -54,6 +55,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -158,6 +160,7 @@ REST_FRAMEWORK = {
 DJSOER = {
     "USER_ID_FIELD" :"username"
 }
+CORS_ALLOW_ALL_ORIGINS = True
 # SIMPLE_JWT = {
 #    'AUTH_HEADER_TYPES': ('JWT',),
 # }
