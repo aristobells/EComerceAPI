@@ -169,12 +169,14 @@ CORS_ALLOW_ALL_ORIGINS = True
 cloudinary.config( 
   cloud_name = config('cloud_name'), 
   api_key = config('api_key'), 
-  api_secret = config('api_secret') 
+  api_secret = config('api_secret'),
+  api_proxy = "http://proxy.server:3128" 
 )
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('cloud_name'),
     'API_KEY': config('api_key'),
     'API_SECRET': config('api_secret'),
+    'API_PROXY': "http://proxy.server:3128"
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
